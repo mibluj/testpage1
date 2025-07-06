@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt – MobiCars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kontakt i rezerwacja</h1>
+    <nav>
+      <a href="index.html">Strona główna</a>
+      <a href="auta.html">Nasze auta</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+  <main>
+    <form action="rezerwacja.php" method="POST">
+      <label>Imię i nazwisko:<br><input type="text" name="imie" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Data wypożyczenia od:<br><input type="date" name="od" required></label><br>
+      <label>Data do:<br><input type="date" name="do" required></label><br>
+      <label>Wybierz auto:<br>
+        <select name="auto">
+          <option>Volkswagen Golf</option>
+          <option>Skoda Octavia</option>
+        </select>
+      </label><br>
+      <button type="submit">Wyślij rezerwację</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 MobiCars
+  </footer>
+</body>
+</html>

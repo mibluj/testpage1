@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>MoovRent � Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="MoovRent Logo" style="height:40px; vertical-align: middle; margin-right:10px;">
+      MoovRent
+    </div>
+    <nav>
+      <a href="index_nl.html">Home</a>
+      <a href="cars_nl.html">Onze auto's</a>
+      <a href="contact_nl.html" class="active">Contact</a>
+    </nav>
+    <div class="contact-info">
+      <a href="tel:+31123456789" style="color:white; margin-right:15px; text-decoration:none;">☎ +31 12 345 6789</a>
+      <a href="mailto:contact@moovrent.nl" style="color:white; text-decoration:none;">✉ contact@moovrent.nl</a>
+    </div>
+    <div class="language-switcher">
+      <a href="index_pl.html">PL</a>
+      <a href="index_en.html">EN</a>
+      <a href="index_nl.html" class="active">NL</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <p>Heeft u vragen? Neem contact met ons op!</p>
+    <form action="mailto:contact@moovrent.nl" method="post" enctype="text/plain">
+      <label for="name">Naam:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">E-mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Bericht:</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+      <button type="submit" class="btn">Verzenden</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>
+      ☎ <a href="tel:+31123456789" style="color:white; text-decoration:none;">+31 12 345 6789</a> | 
+      ✉ <a href="mailto:contact@moovrent.nl" style="color:white; text-decoration:none;">contact@moovrent.nl</a>
+    </p>
+    &copy; 2025 MoovRent. Alle rechten voorbehouden.
+  </footer>
+</body>
+</html>

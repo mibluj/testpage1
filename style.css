@@ -1,0 +1,182 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ogólne */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nagłówek */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 400px;      /* wysokość logo */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px; /* odstęp między logo a tekstem */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #0073e6;
+}
+
+.language-switcher a {
+  color: white;
+  margin-left: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.language-switcher a:hover,
+.language-switcher a.active {
+  background-color: white;
+  color: #004080;
+}
+
+/* Główna zawartość */
+main {
+  flex-grow: 1;
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 0 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+p, ul {
+  margin-bottom: 20px;
+}
+
+/* Lista aut */
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.car-item {
+  background: #e9f0ff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.car-item:hover {
+  transform: translateY(-5px);
+}
+
+.car-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.car-item ul {
+  list-style: none;
+  color: #004080;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/* Przycisk kontaktu (na stronie głównej) */
+.btn {
+  display: inline-block;
+  background-color: #004080;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0073e6;
+}
+
+/* Stopka */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9em;
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+
+  .car-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .car-item {
+    width: 90%;
+  }
+}
+
+body {
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+}
