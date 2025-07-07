@@ -35,7 +35,7 @@ header {
 }
 
 .logo img {
-  height: 400px;      /* wysokość logo */
+  height: 200px;      /* wysokość logo */
   width: auto;
   vertical-align: middle;
   margin-right: 10px; /* odstęp między logo a tekstem */
